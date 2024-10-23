@@ -24,7 +24,7 @@ header img {
 }
 
 .logo h1 {
-    color: #ff0000;
+    color: #BD1111;
 }
 
 nav ul {
@@ -65,12 +65,94 @@ nav ul li a:hover {
     font-size: 18px;
 }
 
-footer {
-    background-color: #BD1111;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    position: absolute;
-    bottom: 0;
+/* Estilos para el carrusel */
+.carrusel {
     width: 100%;
+    overflow: hidden;
+    margin: 40px auto;
+    text-align: center;
+    background-color: #222;
+    padding: 20px 0;
+    color: white;
+}
+
+.carrusel h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #BD1111;
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.carousel-slide img:not(:first-child) {
+    margin-left: 10px; /* Espacio entre imágenes */
+}
+
+/* Control del carrusel con pseudo-clases */
+.carousel-slide:hover {
+    transform: translateX(-100%); /* Desplaza la imagen hacia la izquierda al hacer hover */
+}
+
+/* Estilo para el footer */
+footer {
+    padding: 20px; /* Espacio interior del footer */
+    margin-top: 40px; /* Espacio superior para evitar contacto con la sección anterior */
+    background-color: #BD1111; /* Color de fondo del footer */
+    color: white; /* Color del texto del footer */
+    text-align: center; /* Centra el texto en el footer */
+    clear: both; /* Asegura que no se superponga a elementos flotantes */
+}
+
+
+.about {
+    background-color: #222; /* Fondo oscuro para las nuevas secciones */
+    color: #fff; /* Color de texto blanco */
+    padding: 40px 20px; /* Espaciado interior */
+    margin: 20px 0; /* Margen superior e inferior */
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 10px; /* Tamaño de fuente para los encabezados de la nueva sección */
+    margin-bottom: 20px; /* Espacio debajo del encabezado */
+}
+.about h3 {
+    font-size: 50px; /* Tamaño de fuente para los encabezados de la nueva sección */
+    margin-bottom: 20px; /* Espacio debajo del encabezado */
+    color: #BD1111;
+}
+
+.about p {
+    font-size: 25px; /* Tamaño de fuente para los párrafos */
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+
+/* Estilo para botones */
+.boton {
+    background-color: #BD1111; /* Color de fondo del botón */
+    color: #fff; /* Color de texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espacio interior del botón */
+    font-size: 16px; /* Tamaño de fuente del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+.boton:hover {
+    background-color: #9b0f0f; /* Color de fondo al pasar el ratón */
 }

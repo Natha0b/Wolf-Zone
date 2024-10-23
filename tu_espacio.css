@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0000;
+    color: #333;
+}
+
+header {
+    background-color: #BD1111;
+    color: #fff;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img {
+    width: 100px;  /* Ajusta el ancho */
+    height: 100px;   /* Mantiene proporción */
+}
+
+.logo h1 {
+    color: #BD1111;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #0000;
+}
+/* Estilos generales para la página de clases */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+}
+
+/* Estilo para la sección hero */
+.hero {
+    background-color: #131313; /* Fondo rojo */
+    color: #fff; /* Texto blanco */
+    text-align: center;
+    padding: 60px 20px; /* Espaciado interior */
+}
+
+.hero h2 {
+    font-size: 36px; /* Tamaño del título */
+    margin-bottom: 30px; /* Espacio debajo del título */
+}
+
+.hero p {
+    font-size: 18px; /* Tamaño del párrafo */
+}
+
+.features {
+    background-color: #333; /* Fondo gris oscuro */
+    padding: 40px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.features h3 {
+    font-size: 28px;
+    color: #BD1111; /* Color rojo para el subtítulo */
+    margin-bottom: 20px;
+}
+
+.features ul {
+    list-style-type: none; /* Quitar los marcadores de lista */
+    padding: 0;
+}
+
+.features li {
+    background-color: #444; /* Fondo gris más claro para cada característica */
+    border: 2px solid #BD1111; /* Borde rojo */
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Estilo para el footer */
+footer {
+    padding: 20px; /* Espacio interior del footer */
+    background-color: #BD1111; /* Color de fondo del footer */
+    color: white; /* Color del texto del footer */
+    text-align: center; /* Centra el texto en el footer */
+    clear: both; /* Asegura que no se superponga a elementos flotantes */
+}

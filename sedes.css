@@ -6,36 +6,37 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #0000;
+    background-color: #000;
     color: #333;
 }
 
+/* Header */
 header {
     background-color: #BD1111;
     color: #fff;
-    padding: 5px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-header img {
-    width: 100px;  /* Ajusta el ancho */
-    height: 100px;   /* Mantiene proporción */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten */
 }
 
-.logo h1 {
-    color: #BD1111;
+header img {
+    width: 80px;
+    height: auto; /* Mantiene la proporción */
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap; /* Permite ajustar elementos en pantallas pequeñas */
+    justify-content: center; /* Centra el menú en dispositivos pequeños */
+    margin: 10px 0;
 }
 
 nav ul li {
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 20px; 
+    margin: 10px;
+    font-size: 18px;
 }
 
 nav ul li a {
@@ -46,70 +47,110 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #0000;
-}
-/* Estilos generales para la página de clases */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #000; /* Fondo negro */
-    color: #fff; /* Texto blanco */
+    color: #000;
 }
 
-/* Estilo para la sección hero */
+/* Hero Section */
 .hero {
-    background-color: #131313; /* Fondo rojo */
-    color: #fff; /* Texto blanco */
+    background-color: #131313;
+    color: #fff;
     text-align: center;
-    padding: 60px 20px; /* Espaciado interior */
+    padding: 40px 20px;
 }
 
 .hero h2 {
-    font-size: 36px; /* Tamaño del título */
-    margin-bottom: 30px; /* Espacio debajo del título */
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 18px; /* Tamaño del párrafo */
+    font-size: 16px;
 }
 
+/* Locations Section */
 .locations {
-    background-color: #333; /* Fondo gris oscuro */
-    padding: 40px 20px;
+    background-color: #333;
+    padding: 20px;
     color: #fff;
     text-align: center;
 }
 
 .locations h3 {
-    font-size: 28px;
-    color: #BD1111; /* Color rojo para el subtítulo */
+    font-size: 24px;
+    color: #BD1111;
     margin-bottom: 20px;
 }
 
 .locations ul {
-    list-style-type: none; /* Quitar los marcadores de lista */
+    list-style-type: none;
     padding: 0;
 }
 
 .locations li {
-    background-color: #444; /* Fondo gris más claro para cada sede */
-    border: 2px solid #BD1111; /* Borde rojo */
-    padding: 20px;
-    margin-bottom: 15px;
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    font-size: 18px;
+    background-color: #444;
+    border: 2px solid #BD1111;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
     line-height: 1.5;
 }
 
 .locations li strong {
-    color: #BD1111; /* Resaltar el nombre de la sede */
+    color: #BD1111;
 }
 
-/* Estilo para el footer */
+/* Footer */
 footer {
-    padding: 20px; /* Espacio interior del footer */
-    background-color: #BD1111; /* Color de fondo del footer */
-    color: white; /* Color del texto del footer */
-    text-align: center; /* Centra el texto en el footer */
-    clear: both; /* Asegura que no se superponga a elementos flotantes */
+    padding: 15px;
+    background-color: #BD1111;
+    color: white;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header img {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Cambia el menú a una columna */
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .locations h3 {
+        font-size: 20px;
+    }
+
+    .locations li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .hero {
+        padding: 20px 10px;
+    }
+
+    .locations {
+        padding: 15px 10px;
+    }
 }
